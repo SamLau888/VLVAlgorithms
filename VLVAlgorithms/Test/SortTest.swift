@@ -40,8 +40,8 @@ public struct SortTest {
         example(name: "Quick Sort") {
             var array = [12, 0, 3, 9, 2, 18, 8, 27, 1, 5, 8, -1, 21]
             print("Original: \(array)")
-            Sort.quickSort(&array, <)
-            print("Merge sort by < : \(array)")
+            Sort.quickSort(&array, >)
+            print("Quick sort by < : \(array)")
         }
     }
 }
