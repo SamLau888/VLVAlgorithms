@@ -171,39 +171,40 @@ extension Sort {
         
         let pivot = elements[low]
         
-        var left = low
-        var right = high
+        var begin = low
+        var end = high
         
-        while left < right {
+        while begin < end {
                 
-            while left < right {
+            while begin < end {
                 
-                if sort(pivot, elements[right]) {
-                    right -= 1
+                if sort(pivot, elements[end]) {
+                    end -= 1
                 }
                 else {
-                    elements.swapAt(left, right)
-                    left += 1
+                    elements.swapAt(begin, end)
+                    begin += 1
                     break
                 }
             }
             
-            while left < right {
+            while begin < end {
                 
-                if sort(elements[left], pivot) {
-                    left += 1
+                if sort(elements[begin], pivot) {
+                    begin += 1
                 }
                 else {
-                    elements.swapAt(right, left)
-                    right -= 1
+                    elements.swapAt(end, begin)
+                    end -= 1
                     break
                 }
             }
         }
         
-        elements[left] = pivot
+        // begin == end
+        elements[begin] = pivot
         
-        return left
+        return begin
     }
     
     private static func medianOfThree<Element: Comparable>(_ elements: inout [Element], _ low: Int, _ high: Int, _ sort: (Element, Element) -> Bool) -> Int {
