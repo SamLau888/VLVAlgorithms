@@ -15,6 +15,9 @@
 		22724F2C25748CCC0036A828 /* BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22724F2B25748CCC0036A828 /* BinaryTree.swift */; };
 		22724F2F25748CD20036A828 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22724F2E25748CD20036A828 /* Heap.swift */; };
 		22724F3225748CD70036A828 /* Trie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22724F3125748CD70036A828 /* Trie.swift */; };
+		22724F37257492560036A828 /* Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22724F36257492560036A828 /* Sort.swift */; };
+		22724F3F25749ED10036A828 /* FoundationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22724F3E25749ED10036A828 /* FoundationTest.swift */; };
+		22724F472574E4EB0036A828 /* SortTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22724F462574E4EB0036A828 /* SortTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +42,9 @@
 		22724F2B25748CCC0036A828 /* BinaryTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BinaryTree.swift; path = ../../../../../VLVDataStructure/VLVDataStructure/Tree/BinaryTree/BinaryTree.swift; sourceTree = "<group>"; };
 		22724F2E25748CD20036A828 /* Heap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 		22724F3125748CD70036A828 /* Trie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trie.swift; sourceTree = "<group>"; };
+		22724F36257492560036A828 /* Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sort.swift; sourceTree = "<group>"; };
+		22724F3E25749ED10036A828 /* FoundationTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundationTest.swift; sourceTree = "<group>"; };
+		22724F462574E4EB0036A828 /* SortTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,9 @@
 			isa = PBXGroup;
 			children = (
 				22724F1725748C180036A828 /* VLVDataStructure */,
+				22724F34257490FF0036A828 /* Sort */,
+				22724F35257491050036A828 /* Search */,
+				22724F3A25749E960036A828 /* Test */,
 				22724F0E25748A640036A828 /* main.swift */,
 			);
 			path = VLVAlgorithms;
@@ -147,6 +156,30 @@
 			path = Trie;
 			sourceTree = "<group>";
 		};
+		22724F34257490FF0036A828 /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				22724F36257492560036A828 /* Sort.swift */,
+			);
+			path = Sort;
+			sourceTree = "<group>";
+		};
+		22724F35257491050036A828 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		22724F3A25749E960036A828 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				22724F3E25749ED10036A828 /* FoundationTest.swift */,
+				22724F462574E4EB0036A828 /* SortTest.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -209,9 +242,12 @@
 				22724F1E25748C350036A828 /* Stack.swift in Sources */,
 				22724F2C25748CCC0036A828 /* BinaryTree.swift in Sources */,
 				22724F2425748C3F0036A828 /* PriorityQueue.swift in Sources */,
+				22724F3F25749ED10036A828 /* FoundationTest.swift in Sources */,
 				22724F0F25748A640036A828 /* main.swift in Sources */,
 				22724F2325748C3F0036A828 /* Queue.swift in Sources */,
 				22724F2F25748CD20036A828 /* Heap.swift in Sources */,
+				22724F37257492560036A828 /* Sort.swift in Sources */,
+				22724F472574E4EB0036A828 /* SortTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
