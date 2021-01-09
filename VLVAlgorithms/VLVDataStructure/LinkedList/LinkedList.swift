@@ -11,25 +11,25 @@
  *
  */
 
-fileprivate class LinkedListNode<Element>: CustomStringConvertible {
+public class LinkedListNode<Element>: CustomStringConvertible {
     
-    var element: Element
-    var next: LinkedListNode<Element>?
-    weak var prev: LinkedListNode<Element>?
+    public var element: Element
+    public var next: LinkedListNode<Element>?
+    public weak var prev: LinkedListNode<Element>?
 
-    convenience init(element: Element) {
+    public convenience init(element: Element) {
         self.init(element: element, next: nil, prev: nil)
     }
     
-    convenience init(element: Element, next: LinkedListNode<Element>?) {
+    public convenience init(element: Element, next: LinkedListNode<Element>?) {
         self.init(element: element, next: next, prev: nil)
     }
     
-    convenience init(element: Element, prev: LinkedListNode<Element>?) {
+    public convenience init(element: Element, prev: LinkedListNode<Element>?) {
         self.init(element: element, next: nil, prev: prev)
     }
     
-    init(element: Element, next: LinkedListNode<Element>?, prev: LinkedListNode<Element>?) {
+    public init(element: Element, next: LinkedListNode<Element>?, prev: LinkedListNode<Element>?) {
         self.element = element
         self.next = next
         self.prev = prev
@@ -40,7 +40,7 @@ fileprivate class LinkedListNode<Element>: CustomStringConvertible {
     }
 }
 
-fileprivate extension LinkedListNode {
+public extension LinkedListNode {
     
     var description: String {
         "\(element)"
