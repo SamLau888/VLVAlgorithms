@@ -13,37 +13,41 @@
 
 public class LinkedListNode<Element>: CustomStringConvertible {
     
-    public var element: Element
+    public var element: Element?
     public var next: LinkedListNode<Element>?
     public weak var prev: LinkedListNode<Element>?
 
-    public convenience init(element: Element) {
+    public convenience init() {
+        self.init(element: nil, next: nil, prev: nil)
+    }
+    
+    public convenience init(element: Element?) {
         self.init(element: element, next: nil, prev: nil)
     }
     
-    public convenience init(element: Element, next: LinkedListNode<Element>?) {
+    public convenience init(element: Element?, next: LinkedListNode<Element>?) {
         self.init(element: element, next: next, prev: nil)
     }
     
-    public convenience init(element: Element, prev: LinkedListNode<Element>?) {
+    public convenience init(element: Element?, prev: LinkedListNode<Element>?) {
         self.init(element: element, next: nil, prev: prev)
     }
     
-    public init(element: Element, next: LinkedListNode<Element>?, prev: LinkedListNode<Element>?) {
+    public init(element: Element?, next: LinkedListNode<Element>?, prev: LinkedListNode<Element>?) {
         self.element = element
         self.next = next
         self.prev = prev
     }
     
     deinit {
-        print("deinit \(element)")
+        print("deinit \(String(describing: element))")
     }
 }
 
 public extension LinkedListNode {
     
     var description: String {
-        "\(element)"
+        "\(String(describing: element))"
     }
 }
 
